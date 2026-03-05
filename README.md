@@ -216,4 +216,12 @@ This project is open source and available under the MIT License.
 
 ---
 
-Made with ❤️ using React, TypeScript, and TailwindCSS
+<div align="center">
+
+### Made with ❤️ by [Himanshu Dwivedi](https://github.com/himanshudwivedi)
+
+Built using React, TypeScript, and TailwindCSS
+
+**© 2026 Code Snippet Generator • v1.0**
+
+</div>

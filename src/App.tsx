@@ -238,8 +238,44 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-gray-700 mt-12 py-6 text-center text-gray-400 text-sm">
-        <p>Create beautiful code snippets with customizable themes and export as images</p>
+      <footer className="border-t border-gray-700 mt-12 bg-gray-900/50 backdrop-blur-sm">
+        <div className="container mx-auto px-4 py-8">
+          <div className="flex flex-col items-center gap-4">
+            {/* Main message */}
+            <p className="text-gray-400 text-center">
+              Create beautiful code snippets with customizable themes and export as images
+            </p>
+            
+            {/* Divider */}
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent"></div>
+            
+            {/* Credit */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="flex items-center gap-2"
+            >
+              <span className="text-gray-500 text-sm">Made with</span>
+              <motion.span
+                animate={{ scale: [1, 1.2, 1] }}
+                transition={{ duration: 1, repeat: Infinity, repeatDelay: 2 }}
+                className="text-red-500"
+              >
+                ❤️
+              </motion.span>
+              <span className="text-gray-500 text-sm">by</span>
+              <span className="font-semibold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                Himanshu Dwivedi
+              </span>
+            </motion.div>
+            
+            {/* Year and version */}
+            <p className="text-gray-600 text-xs">
+              © {new Date().getFullYear()} • Code Snippet Generator v1.0
+            </p>
+          </div>
+        </div>
       </footer>
     </div>
   );
